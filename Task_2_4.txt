@@ -1,0 +1,128 @@
+mysql> CREATE DATABASE keyword_dump;
+Query OK, 1 row affected (0.08 sec)
+
+mysql> CREATE TABLE keyword_dump.help_keyword
+    ->  SELECT *
+    ->  FROM mysql.help_keyword
+    ->  LIMIT 100;
+Query OK, 100 rows affected (1.22 sec)
+Records: 100  Duplicates: 0  Warnings: 0
+
+mysql> SHOW  TABLES FROM keyword_dump;
++------------------------+
+| Tables_in_keyword_dump |
++------------------------+
+| help_keyword           |
++------------------------+
+1 row in set (0.05 sec)
+
+mysql> SELECT * FROM keyword_dump.help_keyword;
++-----------------+----------------------------------------+
+| help_keyword_id | name                                   |
++-----------------+----------------------------------------+
+|             108 | %                                      |
+|             264 | &                                      |
+|             422 | (JSON                                  |
+|              86 | *                                      |
+|              84 | +                                      |
+|              85 | -                                      |
+|             423 | ->                                     |
+|             425 | ->>                                    |
+|              87 | /                                      |
+|              75 | :=                                     |
+|              59 | <                                      |
+|             266 | <<                                     |
+|              58 | <=                                     |
+|              56 | <=>                                    |
+|              57 | <>                                     |
+|              55 | =                                      |
+|              61 | >                                      |
+|              60 | >=                                     |
+|             267 | >>                                     |
+|              90 | ABS                                    |
+|             877 | ACCOUNT                                |
+|              91 | ACOS                                   |
+|             657 | ACTION                                 |
+|              49 | ADD                                    |
+|             120 | ADDDATE                                |
+|             121 | ADDTIME                                |
+|             903 | ADMIN                                  |
+|             270 | AES_DECRYPT                            |
+|             271 | AES_ENCRYPT                            |
+|             579 | AFTER                                  |
+|             247 | AGAINST                                |
+|             924 | AGGREGATE                              |
+|             580 | ALGORITHM                              |
+|             719 | ALL                                    |
+|              50 | ALTER                                  |
+|             581 | ANALYZE                                |
+|              62 | AND                                    |
+|             526 | ANY_VALUE                              |
+|             658 | ARCHIVE                                |
+|             254 | ARRAY                                  |
+|             720 | AS                                     |
+|             464 | ASC                                    |
+|             185 | ASCII                                  |
+|              92 | ASIN                                   |
+|             772 | ASSIGN_GTIDS_TO_ANONYMOUS_TRANSACTIONS |
+|               6 | ASYMMETRIC_DECRYPT                     |
+|               7 | ASYMMETRIC_DERIVE                      |
+|               8 | ASYMMETRIC_ENCRYPT                     |
+|               9 | ASYMMETRIC_SIGN                        |
+|              10 | ASYMMETRIC_VERIFY                      |
+|             641 | AT                                     |
+|              93 | ATAN                                   |
+|              94 | ATAN2                                  |
+|             878 | ATTRIBUTE                              |
+|             741 | AUTOCOMMIT                             |
+|             582 | AUTOEXTEND_SIZE                        |
+|             583 | AUTO_INCREMENT                         |
+|             458 | AVG                                    |
+|             584 | AVG_ROW_LENGTH                         |
+|             753 | BACKUP                                 |
+|             767 | BEFORE                                 |
+|             742 | BEGIN                                  |
+|             288 | BENCHMARK                              |
+|              63 | BETWEEN                                |
+|             186 | BIN                                    |
+|             253 | BINARY                                 |
+|             562 | BINLOG                                 |
+|             527 | BIN_TO_UUID                            |
+|             460 | BIT_AND                                |
+|             269 | BIT_COUNT                              |
+|             187 | BIT_LENGTH                             |
+|             461 | BIT_OR                                 |
+|             462 | BIT_XOR                                |
+|              17 | BOOL                                   |
+|              18 | BOOLEAN                                |
+|             230 | BOTH                                   |
+|             645 | BTREE                                  |
+|             465 | BY                                     |
+|              42 | BYTE                                   |
+|             959 | CACHE                                  |
+|             687 | CALL                                   |
+|             497 | CAN_ACCESS_COLUMN                      |
+|             498 | CAN_ACCESS_DATABASE                    |
+|             499 | CAN_ACCESS_TABLE                       |
+|             500 | CAN_ACCESS_USER                        |
+|             501 | CAN_ACCESS_VIEW                        |
+|             659 | CASCADE                                |
+|              76 | CASE                                   |
+|             255 | CAST                                   |
+|             858 | CATALOG_NAME                           |
+|              95 | CEIL                                   |
+|              96 | CEILING                                |
+|             743 | CHAIN                                  |
+|             585 | CHANGE                                 |
+|             563 | CHANNEL                                |
+|              43 | CHAR                                   |
+|              39 | CHARACTER                              |
+|             189 | CHARACTER_LENGTH                       |
+|             289 | CHARSET                                |
+|             188 | CHAR_LENGTH                            |
++-----------------+----------------------------------------+
+100 rows in set (0.00 sec)
+
+mysql>
+
+
